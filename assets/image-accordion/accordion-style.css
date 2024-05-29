@@ -1,0 +1,69 @@
+.accordion {
+	display: flex;
+	flex-direction: row;
+	width: 120%;
+	height: 500px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente */
+	display: none; /* Masquer l'overlay par défaut */
+}
+
+#div-street,
+#div-reflect,
+#div-archi,
+#div-landscape {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+.overlay-title-street,
+.overlay-title-reflect,
+.overlay-title-archi,
+.overlay-title-landscape {
+	z-index: 1000;
+	color: white;
+	font-weight: bold;
+	font-size: 100px;
+	text-shadow: 3px 3px 5px black;
+}
+
+.item-accordion {
+	flex: 1;
+	height: 100%;
+}
+
+.item-accordion:nth-child(1) {
+	background-image: url("../../images/hks/hk_gallery01.jpg");
+}
+.item-accordion:nth-child(2) {
+	background-image: url("../../images/hks/hk_gallery02.jpg");
+}
+.item-accordion:nth-child(3) {
+	background-image: url("../../images/hks/hk_gallery03.jpg");
+}
+.item-accordion:nth-child(4) {
+	background-image: url("../../images/hks/hk_gallery04.jpg");
+}
+.item-accordion:nth-child(5) {
+	background-image: url("../../images/hks/hk_landscape02.jpg");
+}
+
+.item-accordion {
+	background-position: center;
+	background-size: cover;
+	transition: flex 0.8s ease;
+}
+
+.item-accordion:hover {
+	flex: 5;
+	cursor: pointer;
+}

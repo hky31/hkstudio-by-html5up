@@ -10,6 +10,7 @@
 		<noscript
 			><link rel="stylesheet" href="assets/css/noscript.css"
 		/></noscript>
+		<link rel="stylesheet" href="assets/image-accordion/accordion-style.css" />
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
@@ -80,19 +81,12 @@
 						equipped with a fixed focale 26mm. <br />
 						To reach ever greater heights, I have my DJI Mini 2 drone allowing
 						me to film any point of view in 4K
-						<!-- <a href="hkstudio-lens/index.html">SEE MORE</a> -->
 					</p>
 				</header>
 
 				<!-- Gallery  -->
-				<div class="gallery">
+				<!-- <div class="gallery">
 					<article class="from-left">
-						<!-- <a href="images/fulls/hk_gallery01-full.jpg" class="image fit"
-							><img
-								src="images/hks/hk_gallery01.jpg"
-								title="Street Photography"
-								alt=""
-						/></a> -->
 						<a
 							href="hkstudio-lens/index_street.html"
 							data-poptrox="iframe,900x400"
@@ -133,6 +127,29 @@
 							><img src="images/hks/hk_gallery04.jpg" title="Landscapes" alt=""
 						/></a>
 					</article>
+				</div> -->
+
+				<div id="div-accordion" class="accordion shadow-lg p-3 mb-5 bg-white">
+					<div id="div-street" class="item-accordion">
+						<span class="overlay-title-street" style="display: none"
+							>STREET</span
+						>
+					</div>
+					<div id="div-reflect" class="item-accordion">
+						<span class="overlay-title-reflect" style="display: none"
+							>REFLECT</span
+						>
+					</div>
+					<div id="div-archi" class="item-accordion">
+						<span class="overlay-title-archi" style="display: none"
+							>ARCHITECTURE</span
+						>
+					</div>
+					<div id="div-landscape" class="item-accordion">
+						<span class="overlay-title-landscape" style="display: none"
+							>LANDSCAPE</span
+						>
+					</div>
 				</div>
 			</div>
 			<a href="#contact" class="button style2 down anchored">Next</a>
@@ -215,5 +232,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/image-accordion/accordion.js"></script>
 	</body>
 </html>
